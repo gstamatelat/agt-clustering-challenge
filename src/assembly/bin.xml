@@ -19,7 +19,7 @@
         </fileSet>
         <fileSet>
             <directory>${build.directory}/site</directory>
-            <outputDirectory>./docs</outputDirectory>
+            <outputDirectory>./doc</outputDirectory>
         </fileSet>
     </fileSets>
 </assembly>
