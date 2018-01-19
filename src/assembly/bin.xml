@@ -8,7 +8,7 @@
     <files>
         <file>
             <source>${build.directory}/${artifactId}-${version}.jar</source>
-            <outputDirectory>./</outputDirectory>
+            <outputDirectory>./lib</outputDirectory>
         </file>
     </files>
     <fileSets>

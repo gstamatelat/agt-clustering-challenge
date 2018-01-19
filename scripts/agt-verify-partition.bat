@@ -1,1 +1,1 @@
-java -cp ${artifactId}-${version}.jar VerifyPartition %*
+java -cp lib\${artifactId}-${version}.jar VerifyPartition %*

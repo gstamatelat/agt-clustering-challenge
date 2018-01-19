@@ -1,1 +1,1 @@
-java -cp ${artifactId}-${version}.jar VerifyGraph %*
+java -cp lib\${artifactId}-${version}.jar VerifyGraph %*

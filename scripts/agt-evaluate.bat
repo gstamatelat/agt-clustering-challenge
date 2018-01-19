@@ -1,1 +1,1 @@
-java -cp ${artifactId}-${version}.jar Evaluate %*
+java -cp lib\${artifactId}-${version}.jar Evaluate %*

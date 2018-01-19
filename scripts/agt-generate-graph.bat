@@ -1,1 +1,1 @@
-java -cp ${artifactId}-${version}.jar GenerateGraph %*
+java -cp lib\${artifactId}-${version}.jar GenerateGraph %*
