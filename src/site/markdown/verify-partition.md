@@ -1,7 +1,5 @@
 # Verify Partition (agt-verify-partition)
 
-Requires Java 7.
-
 This script verifies that a file is of valid Partition format by validating it
 against a bipartite graph.
 

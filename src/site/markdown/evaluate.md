@@ -1,7 +1,5 @@
 # Evaluate (agt-evaluate)
 
-Requires Java 7.
-
 This script evaluates one or more partitions against a "true" partition.
 
 ```

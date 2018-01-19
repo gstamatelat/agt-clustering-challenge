@@ -1,7 +1,5 @@
 # Verify Graph (agt-verify-graph)
 
-Requires Java 7.
-
 This script verifies that a file is of valid Bipartite format.
 
 ```

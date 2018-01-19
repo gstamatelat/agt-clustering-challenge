@@ -1,7 +1,5 @@
 # Generate Graph (agt-generate-graph)
 
-Requires Java 7.
-
 This script generates a random graph in Bipartite format in the standard output
 stream.
 
