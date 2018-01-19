@@ -19,6 +19,7 @@
         <fileSet>
             <directory>scripts</directory>
             <outputDirectory>./</outputDirectory>
+            <filtered>true</filtered>
         </fileSet>
     </fileSets>
 </assembly>

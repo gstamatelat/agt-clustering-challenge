@@ -1,1 +1,1 @@
-java -cp agt-clustering-challenge-0.1.jar VerifyPartition %*
+java -cp agt-clustering-challenge-${version}.jar VerifyPartition %*

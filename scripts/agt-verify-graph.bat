@@ -1,1 +1,1 @@
-java -cp agt-clustering-challenge-0.1.jar VerifyGraph %*
+java -cp agt-clustering-challenge-${version}.jar VerifyGraph %*
