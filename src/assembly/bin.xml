@@ -7,10 +7,6 @@
     </formats>
     <files>
         <file>
-            <source>README.md</source>
-            <outputDirectory>./</outputDirectory>
-        </file>
-        <file>
             <source>${build.directory}/${artifactId}-${version}.jar</source>
             <outputDirectory>./</outputDirectory>
         </file>
@@ -22,7 +18,7 @@
             <filtered>true</filtered>
         </fileSet>
         <fileSet>
-            <directory>docs</directory>
+            <directory>${build.directory}/site</directory>
             <outputDirectory>./docs</outputDirectory>
         </fileSet>
     </fileSets>
