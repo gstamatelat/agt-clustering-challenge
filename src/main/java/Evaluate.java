@@ -6,6 +6,9 @@ import java.util.List;
 /**
  * This script evaluates one or more partitions against a "true" partition.
  * <p>
+ * The evaluation uses the Jaccard similarity measure, described in
+ * <a href="https://doi.org/10.1007/978-3-662-47824-0_2">DOI 10.1007/978-3-662-47824-0</a>.
+ * <p>
  * Example: {@code ./agt-evaluate truth.txt clusters1.txt clusters2.txt ...}
  * <p>
  * {@code truth.txt}: A file in the Partition format that is considered ground truth.
