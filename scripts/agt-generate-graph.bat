@@ -1,1 +1,1 @@
-java -cp agt-clustering-challenge-${version}.jar GenerateGraph %*
+java -cp ${artifactId}-${version}.jar GenerateGraph %*

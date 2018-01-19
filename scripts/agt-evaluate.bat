@@ -1,1 +1,1 @@
-java -cp agt-clustering-challenge-${version}.jar Evaluate %*
+java -cp ${artifactId}-${version}.jar Evaluate %*
