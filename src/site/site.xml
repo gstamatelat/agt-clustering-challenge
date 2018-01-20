@@ -17,18 +17,18 @@
     </bannerLeft>
 
     <body>
-        <menu name="Documentation">
+        <menu>
             <item name="Introduction" href="challenge.html"/>
-            <item name="File Formats" href="formats.html">
-                <item name="The Bipartite Format" href="graph.html"/>
-                <item name="The Partition Format" href="partition.html"/>
-            </item>
-            <item name="Tools" href="tools.html">
-                <item name="Evaluate" href="evaluate.html"/>
-                <item name="Generate Graph" href="generate-graph.html"/>
-                <item name="Verify Graph" href="verify-graph.html"/>
-                <item name="Verify Partition" href="verify-partition.html"/>
-            </item>
+        </menu>
+        <menu name="File Formats">
+            <item name="Graph" href="graph.html"/>
+            <item name="Partition" href="partition.html"/>
+        </menu>
+        <menu name="Tools">
+            <item name="Evaluate" href="evaluate.html"/>
+            <item name="Generate Graph" href="generate-graph.html"/>
+            <item name="Verify Graph" href="verify-graph.html"/>
+            <item name="Verify Partition" href="verify-partition.html"/>
         </menu>
     </body>
 
