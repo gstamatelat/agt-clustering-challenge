@@ -1,4 +1,4 @@
-# Verify Graph (agt-verify-graph)
+# Verify Graph (*agt-verify-graph*)
 
 This script reverses a bipartite graph.
 

@@ -1,4 +1,4 @@
-# Evaluate (agt-evaluate)
+# Evaluate (*agt-evaluate*)
 
 This script evaluates one or more partitions against a "true" partition.
 

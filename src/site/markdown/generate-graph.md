@@ -1,4 +1,4 @@
-# Generate Graph (agt-generate-graph)
+# Generate Graph (*agt-generate-graph*)
 
 This script generates a random graph in Bipartite format.
 

@@ -1,4 +1,4 @@
-# Verify Graph (agt-verify-graph)
+# Verify Graph (*agt-verify-graph*)
 
 This script verifies that a file is of valid Bipartite format.
 
