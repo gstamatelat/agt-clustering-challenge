@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
@@ -26,21 +23,11 @@ public class BipartiteGraph {
         final Set<String> authorities = new HashSet<>();
         final Map<String, Set<String>> edges = new HashMap<>();
 
-        try (BufferedReader in = Files.newBufferedReader(p, StandardCharsets.UTF_8)) {
-            String line;
-            while ((line = in.readLine()) != null) {
-                final List<String> lineSplit = new ArrayList<>();
-                for (String l : line.split("\\s+")) {
-                    if (!l.isEmpty()) {
-                        lineSplit.add(l);
-                    }
-                }
-                if (lineSplit.size() != 2) {
-                    throw new IllegalArgumentException(String.format(
-                            "Expected two elements in line \"%s\" of file %s", line, p));
-                }
-                final String hub = lineSplit.get(0);
-                final String authority = lineSplit.get(1);
+        try (final CSVParser in = new CSVParser(p, 2)) {
+            String[] line;
+            while ((line = in.next()) != null) {
+                final String hub = line[0];
+                final String authority = line[1];
                 if (authorities.contains(hub)) {
                     throw new IllegalArgumentException(String.format(
                             "Vertex %s is present in both hubs and authorities in file %s", hub, p));

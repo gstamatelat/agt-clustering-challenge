@@ -1,10 +1,5 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * This script reverses a bipartite graph.
@@ -32,18 +27,10 @@ public class ReverseGraph {
         }
 
         /* Print out reverse graph */
-        try (BufferedReader in = Files.newBufferedReader(Paths.get(args[0]), StandardCharsets.UTF_8)) {
-            String line;
-            while ((line = in.readLine()) != null) {
-                final List<String> lineSplit = new ArrayList<>();
-                for (String l : line.split("\\s+")) {
-                    if (!l.isEmpty()) {
-                        lineSplit.add(l);
-                    }
-                }
-                final String hub = lineSplit.get(0);
-                final String authority = lineSplit.get(1);
-                System.out.printf("%s %s%n", authority, hub);
+        try (final CSVParser in = new CSVParser(Paths.get(args[0]), 2)) {
+            String[] line;
+            while ((line = in.next()) != null) {
+                System.out.printf("%s %s%n", line[1], line[0]);
             }
         }
     }
