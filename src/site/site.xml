@@ -25,10 +25,10 @@
             <item name="Partition" href="partition.html"/>
         </menu>
         <menu name="Tools">
-            <item name="Evaluate" href="evaluate.html"/>
             <item name="Generate Graph" href="generate-graph.html"/>
             <item name="Verify Graph" href="verify-graph.html"/>
             <item name="Verify Partition" href="verify-partition.html"/>
+            <item name="Evaluate" href="evaluate.html"/>
         </menu>
     </body>
 
