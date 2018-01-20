@@ -26,6 +26,7 @@
         </menu>
         <menu name="Tools">
             <item name="Generate Graph" href="generate-graph.html"/>
+            <item name="Reverse Graph" href="reverse-graph.html"/>
             <item name="Verify Graph" href="verify-graph.html"/>
             <item name="Verify Partition" href="verify-partition.html"/>
             <item name="Evaluate" href="evaluate.html"/>
