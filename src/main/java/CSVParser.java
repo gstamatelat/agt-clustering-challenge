@@ -19,8 +19,9 @@ public class CSVParser implements AutoCloseable {
      *
      * @param p    the {@code Path} of the file to be read
      * @param size the expected size of each line
-     * @throws IOException              if some if some I/O exception occurs while reading the file
+     * @throws IOException              if some if some I/O exception occurs while opening the file
      * @throws IllegalArgumentException if {@code size < 1}
+     * @throws NullPointerException     if {@code p} is {@code null}
      */
     public CSVParser(Path p, int size) throws IOException {
         if (size < 1) {
