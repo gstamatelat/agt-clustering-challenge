@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-java -cp lib/${artifactId}-${version}.jar VerifyGraph "$@"
+BASEDIR="$(dirname "$0")"
+java -cp "$BASEDIR"/lib/${artifactId}-${version}.jar VerifyGraph "$@"
