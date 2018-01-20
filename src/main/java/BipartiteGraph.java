@@ -23,6 +23,7 @@ public class BipartiteGraph {
     public BipartiteGraph(Path p) throws IOException {
         this.hubs = new HashSet<>();
         final Set<String> authorities = new HashSet<>();
+        final Map<String, Set<String>> edges = new HashMap<>();
 
         try (BufferedReader in = Files.newBufferedReader(p, StandardCharsets.UTF_8)) {
             String line;
@@ -47,8 +48,16 @@ public class BipartiteGraph {
                     throw new IllegalArgumentException(String.format(
                             "Vertex %s is present in both hubs and authorities in file %s", authority, p));
                 }
+                if (!edges.containsKey(hub)) {
+                    edges.put(hub, new HashSet<String>());
+                }
+                if (edges.get(hub).contains(authority)) {
+                    throw new IllegalArgumentException(String.format(
+                            "Duplicate edge (%s -- %s) is present in file %s", hub, authority, p));
+                }
                 hubs.add(hub);
                 authorities.add(authority);
+                edges.get(hub).add(authority);
             }
         }
 
