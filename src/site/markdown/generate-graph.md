@@ -11,10 +11,18 @@ allow this.
 ./agt-generate-graph hubs authorities p seed
 ```
 
-`hubs`: Expected number of hub nodes [2,1000].
+##### `hubs`
 
-`authorities`: Expected number of authority nodes [2,1000].
+Expected number of hub nodes [2,1000].
 
-`p`: Connection probability (0,1].
+##### `authorities`
 
-`seed`: The seed of the RNG used by this script (any `long`).
+Expected number of authority nodes [2,1000].
+
+##### `p`
+
+Connection probability (0,1].
+
+##### `seed`
+
+The seed of the RNG used by this script (any `long`).

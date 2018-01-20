@@ -9,7 +9,10 @@ The evaluation uses the Jaccard similarity measure described in
 ./agt-evaluate truth.txt clusters1.txt clusters2.txt ...
 ```
 
-`truth.txt`: A file in the Partition format that is considered ground truth.
+##### `truth.txt`
 
-`clusters.txt`: A file in the Partition format to be evaluated against
-`truth.txt`.
+A file in the Partition format that is considered ground truth.
+
+##### `clusters.txt`
+
+A file in the Partition format to be evaluated against `truth.txt`.
