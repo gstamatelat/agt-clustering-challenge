@@ -11,6 +11,7 @@ import java.util.*;
 public class BipartiteGraph {
     private final Set<String> hubs;
     private final int authorities;
+    private final int edges;
 
     /**
      * Construct a new {@code BipartiteGraph} from a file in the filesystem.
@@ -62,6 +63,7 @@ public class BipartiteGraph {
         }
 
         this.authorities = authorities.size();
+        this.edges = edges.size();
     }
 
     /**
@@ -83,13 +85,22 @@ public class BipartiteGraph {
     }
 
     /**
+     * Get the number of edges in the graph.
+     *
+     * @return the number of edges in the graph
+     */
+    public int edges() {
+        return edges;
+    }
+
+    /**
      * Returns a string representation of this {@code BipartiteGraph}.
      *
      * @return a string representation of this {@code BipartiteGraph}
      */
     @Override
     public String toString() {
-        return String.format("BipartiteGraph(%d) {%n  hubs = %d%n  authorities = %d%n}",
-                hubs.size() + authorities, hubs.size(), authorities);
+        return String.format("BipartiteGraph(%d) {%n  hubs = %d%n  authorities = %d%n  edges = %d%n}",
+                hubs.size() + authorities, hubs.size(), authorities, edges);
     }
 }
