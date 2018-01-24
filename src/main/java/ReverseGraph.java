@@ -4,7 +4,9 @@ import java.nio.file.Paths;
 /**
  * This script reverses a bipartite graph.
  * <p>
- * The script will verify the source graph before reversing it. The output is dumped in stdout.
+ * The reversed graph is a graph with the exact same vertices and exact edge mappings as the original but the hubs are
+ * interchanged with the authorities. The source graph will be verified before being reversed. The output is dumped in
+ * stdout.
  * <p>
  * Example: {@code ./agt-reverse-graph graph.csv}
  * <p>
