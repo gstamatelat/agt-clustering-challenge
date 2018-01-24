@@ -22,6 +22,7 @@ public class BipartiteGraph {
         this.hubs = new HashSet<>();
         final Set<String> authorities = new HashSet<>();
         final Map<String, Set<String>> edges = new HashMap<>();
+        int edgesCount = 0;
 
         try (final CSVParser in = new CSVParser(p, 2)) {
             String[] line;
@@ -46,11 +47,12 @@ public class BipartiteGraph {
                 hubs.add(hub);
                 authorities.add(authority);
                 edges.get(hub).add(authority);
+                edgesCount++;
             }
         }
 
         this.authorities = authorities.size();
-        this.edges = edges.size();
+        this.edges = edgesCount;
     }
 
     /**
