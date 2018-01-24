@@ -13,7 +13,13 @@
     </files>
     <fileSets>
         <fileSet>
-            <directory>scripts</directory>
+            <directory>scripts/unix</directory>
+            <outputDirectory>./</outputDirectory>
+            <filtered>true</filtered>
+            <fileMode>0755</fileMode>
+        </fileSet>
+        <fileSet>
+            <directory>scripts/windows</directory>
             <outputDirectory>./</outputDirectory>
             <filtered>true</filtered>
         </fileSet>
