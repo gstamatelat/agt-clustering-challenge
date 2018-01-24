@@ -17,11 +17,13 @@
             <outputDirectory>./</outputDirectory>
             <filtered>true</filtered>
             <fileMode>0755</fileMode>
+            <lineEnding>unix</lineEnding>
         </fileSet>
         <fileSet>
             <directory>scripts/windows</directory>
             <outputDirectory>./</outputDirectory>
             <filtered>true</filtered>
+            <lineEnding>dos</lineEnding>
         </fileSet>
         <fileSet>
             <directory>${build.directory}/site</directory>
