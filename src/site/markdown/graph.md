@@ -32,3 +32,35 @@ whitespace. Thus, vertices may not necessarily be numeric.
 
 This bipartite network contains the *hubs* set (1, 2) and the *authorities* set
 (3, 4, 5). This graph has 4 edges.
+
+## Presentation on scripts
+
+```
+BipartiteGraph(VERTEX_COUNT) {
+  hubs = HUB_COUNT
+  authorities = AUTHORITY_COUNT
+  edges = EDGE_COUNT
+}
+```
+
+##### `VERTEX_COUNT`
+
+Number of unique vertices in the graph.
+
+This value is the sum of `HUB_COUNT` and `AUTHORITY_COUNT`.
+
+##### `HUB_COUNT`
+
+Number of unique hubs in the graph.
+
+##### `AUTHORITY_COUNT`
+
+Number of unique authorities in the graph.
+
+##### `EDGE_COUNT`
+
+Number of edges in the graph.
+
+Because the graph is undirected, this value is, more formally, the number of
+adjacent pairs in the graph. The graph is also a simple one, therefore all edges
+are unique.

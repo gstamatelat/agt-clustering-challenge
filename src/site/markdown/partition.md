@@ -46,3 +46,27 @@ This is an invalid format file because vertex `1` is present on two groups.
 ```
 
 This is a valid format file because empty lines are ignored.
+
+## Presentation on scripts
+
+```
+Partition(HUB_COUNT) {
+  [GROUP-1_V-1, GROUP-1_V-2, ...]
+  [GROUP-2_V-1, GROUP-2_V-2, ...]
+  ...
+}
+```
+
+##### `HUB_COUNT`
+
+Number of unique hubs in the original graph.
+
+This value is also the number of vertices in the partition.
+
+##### `GROUP-X_V-*`
+
+The vertices in group `X`.
+
+Groups are in no particular order inside the `Partition` structure. Vertices are
+in no particular order inside the group structure. The count of all the vertex
+values is `HUB_COUNT`.
