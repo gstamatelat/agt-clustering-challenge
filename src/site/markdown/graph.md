@@ -40,25 +40,25 @@ the set \\(B = \\left\\{3, 4, 5\\right\\}\\). This graph has 4 edges.
 
 ```
 BipartiteGraph(VERTEX_COUNT) {
-  hubs = HUB_COUNT
-  authorities = AUTHORITY_COUNT
+  |A|   = A_COUNT
+  |B|   = B_COUNT
   edges = EDGE_COUNT
 }
 ```
 
 ##### `VERTEX_COUNT`
 
-Number of unique vertices in the graph.
+The number of unique vertices in the graph.
 
-This value is the sum of `HUB_COUNT` and `AUTHORITY_COUNT`.
+This value is the sum of `A_COUNT` and `B_COUNT`.
 
-##### `HUB_COUNT`
+##### `A_COUNT`
 
-Number of unique hubs in the graph.
+The number of unique vertices in set \\(A\\).
 
-##### `AUTHORITY_COUNT`
+##### `B_COUNT`
 
-Number of unique authorities in the graph.
+The number of unique vertices in set \\(B\\).
 
 ##### `EDGE_COUNT`
 

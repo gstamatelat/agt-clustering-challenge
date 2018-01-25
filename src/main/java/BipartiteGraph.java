@@ -89,7 +89,7 @@ public class BipartiteGraph {
      */
     @Override
     public String toString() {
-        return String.format("BipartiteGraph(%d) {%n  hubs = %d%n  authorities = %d%n  edges = %d%n}",
+        return String.format("BipartiteGraph(%d) {%n  |A|   = %d%n  |B|   = %d%n  edges = %d%n}",
                 hubs.size() + authorities, hubs.size(), authorities, edges);
     }
 }
