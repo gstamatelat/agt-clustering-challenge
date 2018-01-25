@@ -1,4 +1,6 @@
-# Verify Graph (*agt-verify-graph*)
+# Verify Graph
+
+**`agt-verify-graph`**
 
 This script verifies that a file is of valid Bipartite format.
 
@@ -8,6 +10,6 @@ This script verifies that a file is of valid Bipartite format.
 ./agt-verify-graph graph.csv
 ```
 
-##### `graph.csv`
+#### `graph.csv`
 
 The file to be verified as valid Bipartite format or not.

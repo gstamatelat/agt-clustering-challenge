@@ -1,4 +1,6 @@
-# Reverse Graph (*agt-reverse-graph*)
+# Reverse Graph
+
+**`agt-reverse-graph`**
 
 This script reverses a bipartite graph.
 
@@ -13,6 +15,6 @@ stdout.
 ./agt-reverse-graph graph.csv
 ```
 
-##### `graph.csv`
+#### `graph.csv`
 
 The graph in Bipartite format to be reversed.

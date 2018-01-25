@@ -57,13 +57,13 @@ Partition(HUB_COUNT) {
 }
 ```
 
-##### `HUB_COUNT`
+#### `HUB_COUNT`
 
 Number of unique hubs in the original graph.
 
 This value is also the number of vertices in the partition.
 
-##### `GROUP-X_V-*`
+#### `GROUP-X_V-*`
 
 The vertices in group `X`.
 

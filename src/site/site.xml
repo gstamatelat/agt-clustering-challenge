@@ -42,7 +42,7 @@
             <item name="Graph" href="graph.html"/>
             <item name="Partition" href="partition.html"/>
         </menu>
-        <menu name="Tools" ref="tools">
+        <menu name="Tools Usage" ref="tools">
             <item name="Generate Graph" href="generate-graph.html"/>
             <item name="Reverse Graph" href="reverse-graph.html"/>
             <item name="Verify Graph" href="verify-graph.html"/>
