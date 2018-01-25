@@ -1,15 +1,31 @@
 <project name="AGT Clustering Challenge">
 
     <skin>
-        <groupId>org.apache.maven.skins</groupId>
-        <artifactId>maven-fluido-skin</artifactId>
-        <version>1.5</version>
+        <groupId>lt.velykis.maven.skins</groupId>
+        <artifactId>reflow-maven-skin</artifactId>
+        <version>1.1.1</version>
     </skin>
 
     <custom>
-        <fluidoSkin>
-            <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
-        </fluidoSkin>
+        <reflowSkin>
+            <theme>bootswatch-flatly</theme>
+            <highlightJs>true</highlightJs>
+            <brand>
+                <name>AGT Clustering Challenge</name>
+                <href>index.html</href>
+            </brand>
+            <slogan>Companion package for the clustering challenge in AGT 2017-18.</slogan>
+            <titleTemplate>%2$s | %1$s</titleTemplate>
+            <toc>sidebar</toc>
+            <bottomNav>
+                <column>formats</column>
+                <column>tools</column>
+            </bottomNav>
+            <bottomDescription>
+                Companion package for the clustering challenge in AGT 2017-18.
+            </bottomDescription>
+            <skinAttribution>false</skinAttribution>
+        </reflowSkin>
     </custom>
 
     <bannerLeft>
@@ -17,14 +33,15 @@
     </bannerLeft>
 
     <body>
-        <menu>
-            <item name="Introduction" href="index.html"/>
-        </menu>
-        <menu name="File Formats">
+        <links>
+            <item name="Home" href="index.html"/>
+            <item name="Support thread" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"/>
+        </links>
+        <menu name="File Formats" ref="formats">
             <item name="Graph" href="graph.html"/>
             <item name="Partition" href="partition.html"/>
         </menu>
-        <menu name="Tools">
+        <menu name="Tools" ref="tools">
             <item name="Generate Graph" href="generate-graph.html"/>
             <item name="Reverse Graph" href="reverse-graph.html"/>
             <item name="Verify Graph" href="verify-graph.html"/>
