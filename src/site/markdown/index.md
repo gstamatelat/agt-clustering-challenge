@@ -1,4 +1,4 @@
-# AGT Clustering Challenge
+# Home
 
 Companion package for the clustering challenge in AGT 2017-18.
 
