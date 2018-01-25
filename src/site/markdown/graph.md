@@ -18,7 +18,7 @@ Bipartite graphs comprise of two disjoint vertex sets, which we name *hubs* and
 the CSV file and vertices of the *authorities* set will only appear on the right
 column of the CSV file. There must not be any duplicate edges. To keep the
 format simple, a graph that contains vertices without any edges cannot be
-represented in this format. Vertex labels may contains any character except
+represented in this format. Vertex labels may contain any character except
 whitespace. Thus, vertices may not necessarily be numeric.
 
 ## Example
