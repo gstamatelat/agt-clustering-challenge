@@ -1,8 +1,8 @@
 # The Bipartite Format
 
 This format represents a bipartite graph. A bipartite graph is a graph whose
-vertices can be divided into two disjoint and independent sets `A` and `B` such
-that every edge connects a vertex in `A` to one in `B`.
+vertices can be divided into two disjoint and independent sets \\(A\\) and
+\\(B\\) such that every edge connects a vertex in \\(A\\) to one in \\(B\\).
 
 The container is a text file encoded using any encoding compatible with UTF-8.
 The file must not contain a byte order mark (BOM). The line endings of the file
@@ -19,10 +19,10 @@ is ignored. Therefore, vertex labels may contain any character except whitespace
 and, thus, may not necessarily be numeric. Because each line contains exactly
 two records, there are two implicit columns, the left one and the right one.
 
-Vertices of the set `A` may only appear on the left column of the file and
-vertices of the set `B` may only appear on the right column. There may not be
-any duplicate edges. To keep the format simple, a graph that contains vertices
-without any edges cannot be represented in this format.
+Vertices of the set \\(A\\) may only appear on the left column of the file and
+vertices of the set \\(B\\) may only appear on the right column. There may not
+be any duplicate edges. To keep the format simple, a graph that contains
+vertices without any edges cannot be represented in this format.
 
 ## Example
 
@@ -33,8 +33,8 @@ without any edges cannot be represented in this format.
 2 5
 ```
 
-This bipartite network contains the set `A = {1, 2}` and the set
-`B = {3, 4, 5}`. This graph has 4 edges.
+This bipartite network contains the set \\(A = \\left\\{1, 2\\right\\}\\) and
+the set \\(B = \\left\\{3, 4, 5\\right\\}\\). This graph has 4 edges.
 
 ## Presentation on scripts
 
