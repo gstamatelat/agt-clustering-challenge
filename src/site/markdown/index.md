@@ -13,3 +13,18 @@ with the *Partition format*.
 In this document you will find the specification of the *Bipartite format* and
 the *Partition format* as well usage documentation for the tools included in the
 package to help you develop and test your solution.
+
+---
+
+#### Sitemap
+
+- Home
+- File Formats
+	- [Graph](graph.html)
+	- [Partition](partition.html)
+- Tools Usage
+	- [Generate Graph](generate-graph.html)
+	- [Reverse Graph](reverse-graph.html)
+	- [Verify Graph](verify-graph.html)
+	- [Verify Partition](verify-partition.html)
+	- [Evaluate](evaluate.html)

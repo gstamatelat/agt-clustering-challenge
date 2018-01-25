@@ -25,6 +25,14 @@
                 Companion package for the clustering challenge in AGT 2017-18.
             </bottomDescription>
             <skinAttribution>false</skinAttribution>
+            <pages>
+                <index>
+                    <sections>
+                        <body/>
+                        <sidebar/>
+                    </sections>
+                </index>
+            </pages>
         </reflowSkin>
     </custom>
 
