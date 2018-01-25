@@ -1,0 +1,52 @@
+/* Don't display copyright */
+
+p.copyright {
+    display: none;
+}
+
+/* h5 was not very different from normal text */
+
+h5 {
+    font-weight: 600;
+}
+
+/* Sitemap */
+
+.well.sidebar > h4 {
+    padding: 3px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #b4bcc2;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Border radius */
+
+.well,
+.breadcrumb,
+.source pre,
+tt {
+    border-radius: 2px;
+}
+
+/* Background accent */
+
+ul.breadcrumb,
+.source pre,
+tt {
+    /*background-color: #f6f8fa;*/
+    background-color: #ecf0f1;
+}
+
+/* Code */
+
+.source pre {
+    border: none;
+    padding: 16px;
+}
+
+tt {
+    padding: 0.2em 0.4em;
+}

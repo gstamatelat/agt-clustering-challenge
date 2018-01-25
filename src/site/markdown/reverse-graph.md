@@ -15,6 +15,6 @@ stdout.
 ./agt-reverse-graph graph.csv
 ```
 
-#### `graph.csv`
+##### `graph.csv`
 
 The graph in Bipartite format to be reversed.

@@ -37,16 +37,6 @@ This division comprises of two groups, the group (1, 2, 3) and the group (4, 5).
 
 This is an invalid format file because vertex `1` is present on two groups.
 
----
-
-```
-1 2 3
-
-4 5
-```
-
-This is a valid format file because empty lines are ignored.
-
 ## Presentation on scripts
 
 ```
@@ -57,13 +47,13 @@ Partition(HUB_COUNT) {
 }
 ```
 
-#### `HUB_COUNT`
+##### `HUB_COUNT`
 
 Number of unique hubs in the original graph.
 
 This value is also the number of vertices in the partition.
 
-#### `GROUP-X_V-*`
+##### `GROUP-X_V-*`
 
 The vertices in group `X`.
 

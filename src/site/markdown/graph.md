@@ -43,21 +43,21 @@ BipartiteGraph(VERTEX_COUNT) {
 }
 ```
 
-#### `VERTEX_COUNT`
+##### `VERTEX_COUNT`
 
 Number of unique vertices in the graph.
 
 This value is the sum of `HUB_COUNT` and `AUTHORITY_COUNT`.
 
-#### `HUB_COUNT`
+##### `HUB_COUNT`
 
 Number of unique hubs in the graph.
 
-#### `AUTHORITY_COUNT`
+##### `AUTHORITY_COUNT`
 
 Number of unique authorities in the graph.
 
-#### `EDGE_COUNT`
+##### `EDGE_COUNT`
 
 Number of edges in the graph.
 

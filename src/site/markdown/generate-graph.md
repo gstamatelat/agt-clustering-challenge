@@ -14,18 +14,18 @@ because the Bipartite format does not allow this.
 ./agt-generate-graph hubs authorities p seed
 ```
 
-#### `hubs`
+##### `hubs`
 
 Expected number of hub nodes [2,1000].
 
-#### `authorities`
+##### `authorities`
 
 Expected number of authority nodes [2,1000].
 
-#### `p`
+##### `p`
 
 Connection probability (0,1].
 
-#### `seed`
+##### `seed`
 
 The seed of the RNG used by this script (any `long`).

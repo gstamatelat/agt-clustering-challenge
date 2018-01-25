@@ -43,9 +43,9 @@
     <body>
         <links>
             <item name="Home" href="index.html"/>
-            <item name="Support thread &#8618;" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"
-                  target="_blank"/>
             <item name="Repository &#8618;" href="https://euclid.ee.duth.gr:8889/james/agt-clustering-challenge"
+                  target="_blank"/>
+            <item name="Support thread &#8618;" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"
                   target="_blank"/>
         </links>
         <menu name="File Formats" ref="formats">
