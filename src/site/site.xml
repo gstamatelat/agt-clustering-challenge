@@ -11,7 +11,7 @@
             <theme>bootswatch-flatly</theme>
             <highlightJs>true</highlightJs>
             <brand>
-                <name>AGT Clustering Challenge</name>
+                <name>AGT Clustering Challenge v${version}</name>
                 <href>index.html</href>
             </brand>
             <slogan>Companion package for the clustering challenge in AGT 2017-18.</slogan>
@@ -37,7 +37,7 @@
     </custom>
 
     <bannerLeft>
-        <name>AGT Clustering Challenge</name>
+        <name>&lt;span style="color: #1abc9c;"&gt;AGT&lt;/span&gt; Clustering Challenge</name>
     </bannerLeft>
 
     <body>
