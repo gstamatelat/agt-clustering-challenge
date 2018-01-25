@@ -5,19 +5,6 @@ import java.util.Random;
 
 /**
  * This script generates a random graph in Bipartite format in the standard output stream.
- * <p>
- * Due to the way random networks form, some vertices may be unconnected. These vertices are not included in the graph
- * because the Bipartite format does not allow this.
- * <p>
- * Example: {@code ./agt-generate-graph hubs authorities p seed}
- * <p>
- * {@code hubs}: Expected number of hub nodes [2,1000].
- * <p>
- * {@code authorities}: Expected number of authority nodes [2,1000].
- * <p>
- * {@code p}: Connection probability (0,1].
- * <p>
- * {@code seed}: The seed of the RNG used by this script (any {@code long}).
  */
 public class GenerateGraph {
     public static void main(String[] args) {

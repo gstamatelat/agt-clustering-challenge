@@ -2,6 +2,8 @@
 
 This script verifies that a file is of valid Bipartite format.
 
+## Usage
+
 ```
 ./agt-verify-graph graph.csv
 ```

@@ -7,6 +7,8 @@ mappings as the original but the hubs are interchanged with the authorities. The
 source graph will be verified before being reversed. The output is dumped in
 stdout.
 
+## Usage
+
 ```
 ./agt-reverse-graph graph.csv
 ```

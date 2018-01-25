@@ -5,15 +5,6 @@ import java.util.List;
 
 /**
  * This script evaluates one or more partitions against a "true" partition.
- * <p>
- * The evaluation uses the Jaccard similarity measure, described in
- * <a href="https://doi.org/10.1007/978-3-662-47824-0_2">DOI 10.1007/978-3-662-47824-0</a>.
- * <p>
- * Example: {@code ./agt-evaluate truth.txt clusters1.txt clusters2.txt ...}
- * <p>
- * {@code truth.txt}: A file in the Partition format that is considered ground truth.
- * <p>
- * {@code clusters.txt}: A file in the Partition format to be evaluated against {@code truth.txt}.
  */
 public class Evaluate {
     public static void main(String[] args) throws IOException {
@@ -42,14 +33,17 @@ public class Evaluate {
         }
 
         /* Instantiate similarities and format */
-        final String format = String.format("%%-%ds %%8.4f%%n", longest);
-        final String headerFormat = String.format("%%-%ds %%8s%%n", longest);
+        final String format = String.format("%%-%ds %%8.4f %%8.4f%%n", longest);
+        final String headerFormat = String.format("%%-%ds %%8s %%8s%%n", longest);
         final PartitionSimilarity jaccard = new JaccardSimilarity();
+        final PartitionSimilarity smc = new SimpleMatchingSimilarity();
 
         /* Calculate similarities */
-        System.out.printf(headerFormat, "Partition", "Jaccard");
+        System.out.printf(headerFormat, "Partition", "Jaccard", "SMC");
         for (Partition p : students) {
-            System.out.printf(format, p.name(), jaccard.similarity(against, p));
+            System.out.printf(format, p.name(),
+                    jaccard.similarity(against, p),
+                    smc.similarity(against, p));
         }
     }
 }

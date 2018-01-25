@@ -2,17 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Implementation of the Jaccard similarity.
- *
- * @see <a href="https://doi.org/10.1007/978-3-662-47824-0_2">DOI 10.1007/978-3-662-47824-0</a>
+ * Implementation of the Simple matching coefficient (SMC).
+ * <p>
+ * This measure is not documented as a partition similarity but it works the same way as {@link JaccardSimilarity} in
+ * the sense that it creates all the pairs and then applies the measure. In this case, only the measure is different.
  */
-public class JaccardSimilarity implements PartitionSimilarity {
+public class SimpleMatchingSimilarity implements PartitionSimilarity {
     /**
-     * Returns the Jaccard similarity between {@code a} and {@code b}.
+     * Returns the SMC between {@code a} and {@code b}.
      *
      * @param a one {@link Partition}
      * @param b the other {@link Partition}
-     * @return the Jaccard similarity between {@code a} and {@code b}
+     * @return the SMC between {@code a} and {@code b}
      * @throws NullPointerException     if {@code a} or {@code b} is {@code null}
      * @throws IllegalArgumentException if {@code a} and {@code b} do not refer to the same vertex set
      */
@@ -22,8 +23,8 @@ public class JaccardSimilarity implements PartitionSimilarity {
             throw new IllegalArgumentException();
         }
 
-        int intersection = 0;
-        int union = 0;
+        int common = 0;
+        int all = 0;
 
         // This is a bad quadratic implementation but easy to read
         final List<String> vertices = new ArrayList<>(a.vertices());
@@ -32,14 +33,15 @@ public class JaccardSimilarity implements PartitionSimilarity {
                 final boolean aHas = a.connected(vertices.get(i), vertices.get(j));
                 final boolean bHas = b.connected(vertices.get(i), vertices.get(j));
                 if (aHas && bHas) {
-                    intersection++;
+                    common++;
                 }
-                if (aHas || bHas) {
-                    union++;
+                if (!aHas && !bHas) {
+                    common++;
                 }
+                all++;
             }
         }
 
-        return (double) intersection / (double) union;
+        return (double) common / (double) all;
     }
 }

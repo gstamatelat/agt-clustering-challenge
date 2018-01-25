@@ -3,6 +3,8 @@
 This script verifies that a file is of valid Partition format by validating it
 against a bipartite graph.
 
+## Usage
+
 ```
 ./agt-verify-partition graph.csv clusters.txt
 ```

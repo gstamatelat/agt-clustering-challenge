@@ -3,10 +3,6 @@ import java.nio.file.Paths;
 
 /**
  * This script verifies that a file is of valid Bipartite format.
- * <p>
- * Example: {@code ./agt-verify-graph graph.csv}
- * <p>
- * {@code graph.csv}: The file to be verified as valid Bipartite format or not.
  */
 public class VerifyGraph {
     public static void main(String[] args) throws IOException {
