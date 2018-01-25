@@ -18,7 +18,7 @@ package to help you develop and test your solution.
 
 #### Sitemap
 
-- Home
+- **Home**
 - File Formats
 	- [Graph](graph.html)
 	- [Partition](partition.html)
