@@ -6,7 +6,7 @@ This script evaluates one or more partitions against a "true" partition.
 
 The script uses the following measures:
 
-### Jaccard index
+#### Jaccard index
 
 The Jaccard index is defined as the ratio of the number of node pairs classified
 in the same cluster in both partitions, over the number of node pairs which are
@@ -14,7 +14,7 @@ classified in the same cluster in at least one partition.
 
 [DOI 10.1007/978-3-662-47824-0](https://doi.org/10.1007/978-3-662-47824-0_2)
 
-### Simple matching coefficient
+#### Simple matching coefficient
 
 The Simple matching coefficient is defined as the normalized sum of the number
 of node pairs classified in the same cluster in both partitions and the number
