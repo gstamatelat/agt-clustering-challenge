@@ -35,7 +35,8 @@
     <body>
         <links>
             <item name="Home" href="index.html"/>
-            <item name="Support thread" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"/>
+            <item name="Support thread &#8618;" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"
+                  target="_blank"/>
         </links>
         <menu name="File Formats" ref="formats">
             <item name="Graph" href="graph.html"/>
