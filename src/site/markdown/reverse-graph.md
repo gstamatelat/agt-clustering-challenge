@@ -5,7 +5,7 @@
 This script reverses a bipartite graph.
 
 The reversed graph is a graph with the exact same vertices and exact edge
-mappings as the original but the hubs are interchanged with the authorities. The
+mappings as the original but the sets \\(A\\) and \\(B\\) are interchanged. The
 source graph will be verified before being reversed. The output is dumped in
 stdout.
 

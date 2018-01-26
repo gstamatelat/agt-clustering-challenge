@@ -11,20 +11,20 @@ because the Bipartite format does not allow this.
 ## Usage
 
 ```
-./agt-generate-graph hubs authorities p seed
+./agt-generate-graph a b p seed
 ```
 
-##### `hubs`
+##### `a`
 
-Expected number of hub nodes [2,1000].
+Expected number of nodes in \\(A\\) in \\([2,1000]\\).
 
-##### `authorities`
+##### `b`
 
-Expected number of authority nodes [2,1000].
+Expected number of nodes in \\(B\\) in \\([2,1000]\\).
 
 ##### `p`
 
-Connection probability (0,1].
+Connection probability in \\((0,1]\\).
 
 ##### `seed`
 

@@ -4,9 +4,15 @@ Companion package for the clustering challenge in AGT 2017-18.
 
 ## Challenge
 
-Given a graph in *Bipartite format*, develop a clustering algorithm to partition
-its *hubs* into groups of closely related vertices. Your output should comply
-with the *Partition format*.
+You are given a subgraph of the *Twitter* social network. The subgraph is a
+network \\(G = \\left(A,B,E\\right)\\) with the format specified
+[here](graph.html). More specifically, edges represent follower-followee
+relationships. An edge \\(A_i -- B_j\\) means that \\(B_j\\) is a *follower* of
+\\(A_i\\) (or \\(A_i\\) is a *friend* of \\(B_j\\)).
+
+Your task is to develop an algorithm to partition the vertices of set \\(A\\)
+into groups of closely related vertices. Your output should comply with the
+[Partition format](partition.html).
 
 ## Contents
 

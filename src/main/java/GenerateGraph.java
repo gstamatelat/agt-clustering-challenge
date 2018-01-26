@@ -10,7 +10,7 @@ public class GenerateGraph {
     public static void main(String[] args) {
         /* Require exactly 4 arguments */
         if (args.length != 4) {
-            System.err.println("Usage: ./agt-generate-graph hubs authorities p seed");
+            System.err.println("Usage: ./agt-generate-graph a b p seed");
             return;
         }
 
