@@ -8,11 +8,11 @@ import java.util.List;
  */
 public class JaccardSimilarity implements PartitionSimilarity {
     /**
-     * Returns the Jaccard similarity between {@code a} and {@code b}.
+     * Returns the Jaccard index between {@code a} and {@code b}.
      *
      * @param a one {@link Partition}
      * @param b the other {@link Partition}
-     * @return the Jaccard similarity between {@code a} and {@code b}
+     * @return the Jaccard index between {@code a} and {@code b}
      * @throws NullPointerException     if {@code a} or {@code b} is {@code null}
      * @throws IllegalArgumentException if {@code a} and {@code b} do not refer to the same vertex set
      */

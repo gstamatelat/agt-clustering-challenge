@@ -14,24 +14,59 @@ of similarity measures is that a higher index reflects a higher degree of
 similarity between the two partitions. These measures are also commutative and
 deterministic operations.
 
-Measure                     | Identification | Range       | References                                                               
---------------------------- | -------------- | ----------- | -------------------------------|
-Jaccard index               | `Jaccard`      | \\([0,1]\\) | [10.1007/978-3-662-47824-0][1] |
-Simple matching coefficient | `SMC`          | \\([0,1]\\) |                                |
+Measure                     | Identification | Range       |
+--------------------------- | -------------- | ----------- |
+Jaccard index               | `Jaccard`      | \\([0,1]\\) |
+Simple matching coefficient | `SMC`          | \\([0,1]\\) |
+Sørensen-Dice coefficient   | `F1`           | \\([0,1]\\) |
 
 [1]: https://doi.org/10.1007/978-3-662-47824-0_2
 
+You can find short explanations about the measures below. We define \\(P\\) as
+the set of all unordered pairs. Of course, it holds that
+
+\\[
+|P| = \frac{|A| * (|A| - 1)}{2}.
+\\]
+
+We also define \\(X\\) as the set of unordered vertex pairs of one partition
+that are in the same cluster and \\(Y\\) as the set of unordered vertex pairs of
+the other partition that are in the same cluster.
+
 ### Jaccard index
+
+[`10.1007/978-3-662-47824-0`](https://doi.org/10.1007/978-3-662-47824-0_2)
 
 The Jaccard index is defined as the ratio of the number of node pairs classified
 in the same cluster in both partitions, over the number of node pairs which are
 classified in the same cluster in at least one partition.
 
+\\[
+\frac{|X \\cap Y|}{|X \\cup Y|}
+\\]
+
 ### Simple matching coefficient
+
+[`Simple matching coefficient @ Wikipedia`](https://en.wikipedia.org/wiki/Simple_matching_coefficient)
 
 The Simple matching coefficient is defined as the normalized sum of the number
 of node pairs classified in the same cluster in both partitions and the number
 of node pairs classified in different clusters in both partitions.
+
+\\[
+\frac{|X \\cap Y| + |X' \\cap Y'|}{|P|}
+\\]
+
+### Sørensen-Dice coefficient
+
+[`Sørensen-Dice coefficient @ Wikipedia`](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
+
+The Sorenson-Dice coefficient is defined to be the harmonic mean of precision
+and recall.
+
+\\[
+\frac{2 |X \\cap Y|}{|X| + |Y|}
+\\]
 
 ## Usage
 
