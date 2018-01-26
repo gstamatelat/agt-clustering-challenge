@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This script evaluates one or more partitions against a "true" partition.
+ * This script evaluates one or more test partitions against a true partition that represents the ground truth.
  */
 public class Evaluate {
     public static void main(String[] args) throws IOException {
