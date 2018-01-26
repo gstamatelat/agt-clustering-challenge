@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700');
+
 /* Don't display copyright */
 
 p.copyright {
     display: none;
+}
+
+/* Monospace font */
+
+code,
+pre,
+tt {
+    /*font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
+    font-family: 'Fira Mono', monospace;
+    font-weight: 500;
 }
 
 /* h5 was not very different from normal text */

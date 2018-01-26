@@ -1,8 +1,9 @@
 # The Bipartite Format
 
-This format represents a bipartite graph. A bipartite graph is a graph whose
-vertices can be divided into two disjoint and independent sets \\(A\\) and
-\\(B\\) such that every edge connects a vertex in \\(A\\) to one in \\(B\\).
+This format represents a bipartite graph. A bipartite graph
+\\(G = \\left(A,B,E\\right)\\) is a graph whose vertices can be divided into two
+disjoint and independent sets \\(A\\) and \\(B\\) such that every edge \\(E_i\\)
+connects a vertex in \\(A\\) to one in \\(B\\).
 
 The container is a text file encoded using any encoding compatible with UTF-8.
 The file must not contain a byte order mark (BOM). The line endings of the file
