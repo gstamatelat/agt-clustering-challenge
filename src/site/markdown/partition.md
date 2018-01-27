@@ -61,7 +61,7 @@ Partition(COUNT) {
 
 ##### `COUNT`
 
-Number of unique vertices in \\(A\\) of the original graph.
+The cardinality of set \\(A\\) of the original graph.
 
 This value is also the number of vertices in the partition.
 
