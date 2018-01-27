@@ -55,11 +55,11 @@ This value is the sum of `A_COUNT` and `B_COUNT`.
 
 ##### `A_COUNT`
 
-The number of unique vertices in set \\(A\\).
+The cardinality of set \\(A\\) (number of unique vertices).
 
 ##### `B_COUNT`
 
-The number of unique vertices in set \\(B\\).
+The cardinality of set \\(B\\) (number of unique vertices).
 
 ##### `EDGE_COUNT`
 
