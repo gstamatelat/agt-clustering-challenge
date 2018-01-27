@@ -18,8 +18,7 @@
             <titleTemplate>%2$s | %1$s</titleTemplate>
             <toc>sidebar</toc>
             <bottomNav>
-                <column>formats</column>
-                <column>tools</column>
+                <column>resources</column>
             </bottomNav>
             <bottomDescription>
                 Companion package for the clustering challenge in AGT 2017-18.
@@ -47,11 +46,11 @@
     <body>
         <links>
             <item name="Home" href="index.html"/>
-            <item name="Repository &#8618;" href="https://euclid.ee.duth.gr:8889/james/agt-clustering-challenge"
-                  target="_blank"/>
-            <item name="Support thread &#8618;" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"
-                  target="_blank"/>
         </links>
+        <menu name="Resources" ref="resources">
+            <item name="Repository &#8618;" href="https://euclid.ee.duth.gr:8889/james/agt-clustering-challenge"/>
+            <item name="Support thread &#8618;" href="https://www.deece.edu.gr/forum/viewtopic.php?f=260&amp;t=9033"/>
+        </menu>
         <menu name="File Formats" ref="formats">
             <item name="Graph" href="graph.html"/>
             <item name="Partition" href="partition.html"/>
