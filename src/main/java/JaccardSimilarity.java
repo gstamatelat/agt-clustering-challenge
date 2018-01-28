@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Implementation of the Jaccard similarity.
+ * Implementation of the Jaccard index.
  *
  * @see <a href="https://doi.org/10.1007/978-3-662-47824-0_2">DOI 10.1007/978-3-662-47824-0</a>
  */

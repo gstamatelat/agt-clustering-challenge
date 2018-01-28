@@ -14,11 +14,12 @@ of similarity measures is that a higher index reflects a higher degree of
 similarity between the two partitions. These measures are also commutative and
 deterministic operations.
 
-Measure                     | Identification | Range       |
---------------------------- | -------------- | ----------- |
-Jaccard index               | `Jaccard`      | \\([0,1]\\) |
-Simple matching coefficient | `SMC`          | \\([0,1]\\) |
-Sørensen-Dice coefficient   | `F1`           | \\([0,1]\\) |
+Measure                       | Identification | Range       |
+----------------------------- | -------------- | ----------- |
+Jaccard index                 | `Jaccard`      | \\([0,1]\\) |
+Simple matching coefficient   | `SMC`          | \\([0,1]\\) |
+Sørensen-Dice coefficient     | `F1`           | \\([0,1]\\) |
+Normalized mutual information | `NMI`          | \\([0,1]\\) |
 
 [1]: https://doi.org/10.1007/978-3-662-47824-0_2
 
@@ -66,6 +67,23 @@ and recall.
 
 \\[
 \frac{2 |X \\cap Y|}{|X| + |Y|}
+\\]
+
+### Normalized mutual information
+
+[`Introduction to Information Retrieval`](https://nlp.stanford.edu/IR-book/information-retrieval-book.html)
+
+The mutual information (MI) \\(I(X;Y)\\) of two random variables \\(X\\) and
+\\(X\\) is a measure of the mutual dependence between the two variables. This
+implementation uses base-2 logarithm and handles zero probabilities using the
+method on
+[this](https://stats.stackexchange.com/questions/73502/conditional-mutual-information-and-how-to-deal-with-zero-probabilities)
+post. The formula from
+[Data Mining: Practical Machine Learning Tools and Techniques](https://www.cs.waikato.ac.nz/~ml/weka/book.html)
+was used for normalizing, which is defined as:
+
+\\[
+U(X,Y)=2{\\frac {I(X;Y)}{\\mathrm {H} (X)+\\mathrm {H} (Y)}}
 \\]
 
 ## Usage

@@ -33,19 +33,21 @@ public class Evaluate {
         }
 
         /* Instantiate similarities and format */
-        final String format = String.format("%%-%ds %%8.4f %%8.4f %%8.4f%%n", longest);
-        final String headerFormat = String.format("%%-%ds %%8s %%8s %%8s%%n", longest);
+        final String format = String.format("%%-%ds %%8.4f %%8.4f %%8.4f %%8.4f%%n", longest);
+        final String headerFormat = String.format("%%-%ds %%8s %%8s %%8s %%8s%%n", longest);
         final PartitionSimilarity jaccard = new JaccardSimilarity();
         final PartitionSimilarity smc = new SimpleMatchingSimilarity();
         final PartitionSimilarity f1 = new SorensenDiceSimilarity();
+        final PartitionSimilarity mi = new MutualInformationSimilarity();
 
         /* Calculate similarities */
-        System.out.printf(headerFormat, "Partition", "Jaccard", "SMC", "F1");
+        System.out.printf(headerFormat, "Partition", "Jaccard", "SMC", "F1", "NMI");
         for (Partition p : students) {
             System.out.printf(format, p.name(),
                     jaccard.similarity(against, p),
                     smc.similarity(against, p),
-                    f1.similarity(against, p));
+                    f1.similarity(against, p),
+                    mi.similarity(against, p));
         }
     }
 }
