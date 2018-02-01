@@ -36,7 +36,7 @@ the other partition that are in the same cluster.
 
 ### Jaccard index
 
-[`10.1007/978-3-662-47824-0`](https://doi.org/10.1007/978-3-662-47824-0_2)
+[`Community Detection in Bipartite Networks: Algorithms and Case studies`](https://doi.org/10.1007/978-3-662-47824-0_2)
 
 The Jaccard index is defined as the ratio of the number of node pairs classified
 in the same cluster in both partitions, over the number of node pairs which are
