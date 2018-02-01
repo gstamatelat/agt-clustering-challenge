@@ -31,6 +31,7 @@ package to help you develop and test your solution.
 - Tools Usage
 	- [Generate Graph](generate-graph.html)
 	- [Reverse Graph](reverse-graph.html)
+	- [Obfuscate Graph](obfuscate-graph.html)
 	- [Verify Graph](verify-graph.html)
 	- [Verify Partition](verify-partition.html)
 	- [Evaluate](evaluate.html)
