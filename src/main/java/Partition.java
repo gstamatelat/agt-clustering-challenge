@@ -12,6 +12,15 @@ public class Partition {
     private final Set<String> vertices;
     private final String name;
 
+    private Partition(String name) {
+        if (name == null) {
+            throw new NullPointerException();
+        }
+        this.clusters = new HashSet<>();
+        this.vertices = new HashSet<>();
+        this.name = name;
+    }
+
     /**
      * Construct a new {@code Partition} from a file in the filesystem. This constructor does not verify against a
      * vertex set.
@@ -86,6 +95,31 @@ public class Partition {
      */
     public static boolean sameGraph(Partition a, Partition b) {
         return a.vertices.equals(b.vertices);
+    }
+
+    /**
+     * Returns a new {@link Partition} that all the vertex labels are mapped (obfuscated).
+     *
+     * @param map the label mappings
+     * @return a new {@link Partition} that all the vertex labels are mapped
+     * @throws NullPointerException     if {@code map} is {@code null}
+     * @throws IllegalArgumentException if {@code map} does not contain all vertex labels in this {@link Partition}
+     */
+    public Partition map(Map<String, String> map) {
+        final Partition p = new Partition(this.name);
+        for (Set<String> cluster : clusters) {
+            final Set<String> newCluster = new HashSet<>();
+            for (String s : cluster) {
+                final String mapped = map.get(s);
+                if (mapped == null) {
+                    throw new IllegalArgumentException();
+                }
+                newCluster.add(mapped);
+                p.vertices.add(mapped);
+            }
+            p.clusters.add(Collections.unmodifiableSet(newCluster));
+        }
+        return p;
     }
 
     /**

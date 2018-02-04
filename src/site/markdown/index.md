@@ -32,6 +32,7 @@ package to help you develop and test your solution.
 	- [Generate Graph](generate-graph.html)
 	- [Reverse Graph](reverse-graph.html)
 	- [Obfuscate Graph](obfuscate-graph.html)
+	- [Obfuscate Partition](obfuscate-partition.html)
 	- [Verify Graph](verify-graph.html)
 	- [Verify Partition](verify-partition.html)
 	- [Evaluate](evaluate.html)
