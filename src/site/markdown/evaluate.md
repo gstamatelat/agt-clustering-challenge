@@ -14,17 +14,19 @@ of similarity measures is that a higher index reflects a higher degree of
 similarity between the two partitions. These measures are also commutative and
 deterministic operations.
 
-Measure                       | Identification | Range       |
------------------------------ | -------------- | ----------- |
-Jaccard index                 | `Jaccard`      | \\([0,1]\\) |
-Simple matching coefficient   | `SMC`          | \\([0,1]\\) |
-Sørensen-Dice coefficient     | `F1`           | \\([0,1]\\) |
-Normalized mutual information | `NMI`          | \\([0,1]\\) |
+Measure                         | Identification | Range        |
+------------------------------- | -------------- | ------------ |
+Jaccard index                   | `Jaccard`      | \\([0,1]\\)  |
+Simple matching coefficient     | `SMC`          | \\([0,1]\\)  |
+Sørensen-Dice coefficient       | `F1`           | \\([0,1]\\)  |
+Normalized mutual information   | `NMI`          | \\([0,1]\\)  |
+Pearson correlation coefficient | `Pearson`      | \\([-1,1]\\) |
 
 [1]: https://doi.org/10.1007/978-3-662-47824-0_2
 
 You can find short explanations about the measures below. We define \\(P\\) as
-the set of all unordered pairs. Of course, it holds that
+the set of all unordered pairs, excluding the pairs containing the same two
+vertices. Of course, it holds that
 
 \\[
 |P| = \frac{|A| * (|A| - 1)}{2}.
@@ -84,6 +86,17 @@ was used for normalizing, which is defined as:
 
 \\[
 U(X,Y)=2{\\frac {I(X;Y)}{\\mathrm {H} (X)+\\mathrm {H} (Y)}}
+\\]
+
+### Pearson correlation coefficient
+
+[`Networks: An Introduction`](https://doi.org/10.1093/acprof:oso/9780199206650.003.0007)
+
+The Pearson correlation coefficient is a measure of the linear correlation
+between two variables \\(X\\) and \\(Y\\). It is defined as
+
+\\[
+\\rho_{X,Y}=\\frac {cov(X,Y)}{\\sigma_X\\sigma_Y}
 \\]
 
 ## Usage
