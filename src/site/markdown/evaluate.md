@@ -21,6 +21,7 @@ Simple matching coefficient     | `SMC`          | \\([0,1]\\)  |
 Sørensen-Dice coefficient       | `F1`           | \\([0,1]\\)  |
 Normalized mutual information   | `NMI`          | \\([0,1]\\)  |
 Pearson correlation coefficient | `Pearson`      | \\([-1,1]\\) |
+Cosine similarity               | `Cosine`       | \\([0,1]\\)  |
 
 [1]: https://doi.org/10.1007/978-3-662-47824-0_2
 
@@ -64,8 +65,9 @@ of node pairs classified in different clusters in both partitions.
 
 [`Sørensen-Dice coefficient @ Wikipedia`](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)
 
-The Sorenson-Dice coefficient is defined to be the harmonic mean of precision
-and recall.
+The Sørensen-Dice coefficient is defined to be the harmonic mean of precision
+and recall. It is also the intersection of \\(X\\) and \\(Y\\) over the
+arithmetic mean of their cardinalities.
 
 \\[
 \frac{2 |X \\cap Y|}{|X| + |Y|}
@@ -76,7 +78,7 @@ and recall.
 [`Introduction to Information Retrieval`](https://nlp.stanford.edu/IR-book/information-retrieval-book.html)
 
 The mutual information (MI) \\(I(X;Y)\\) of two random variables \\(X\\) and
-\\(X\\) is a measure of the mutual dependence between the two variables. This
+\\(Y\\) is a measure of the mutual dependence between the two variables. This
 implementation uses base-2 logarithm and handles zero probabilities using the
 method on
 [this](https://stats.stackexchange.com/questions/73502/conditional-mutual-information-and-how-to-deal-with-zero-probabilities)
@@ -97,6 +99,18 @@ between two variables \\(X\\) and \\(Y\\). It is defined as
 
 \\[
 \\rho_{X,Y}=\\frac {cov(X,Y)}{\\sigma_X\\sigma_Y}
+\\]
+
+### Cosine similarity
+
+[`Cosine similarity @ Wikipedia`](https://en.wikipedia.org/wiki/Cosine_similarity)
+
+The Cosine similarity is similar to the Sørensen-Dice coefficient and is defined
+as the intersection of \\(X\\) and \\(Y\\) over the geometric mean (as opposed
+to arithmetic in Sørensen-Dice) of their cardinalities.
+
+\\[
+\frac{|X \\cap Y|}{\\sqrt{|X| |Y|}}
 \\]
 
 ## Usage
