@@ -51,6 +51,10 @@ thus the groups are overlapping.
 
 ## Presentation on scripts
 
+Various scripts that read from or write to partition files will present the
+partition in a human readable form. This form is different from the actual file
+format.
+
 ```
 Partition(COUNT) {
   [GROUP-1_V-1, GROUP-1_V-2, ...]

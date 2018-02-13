@@ -39,6 +39,9 @@ the set \\(B = \\left\\{3, 4, 5\\right\\}\\). This graph has 4 edges.
 
 ## Presentation on scripts
 
+Various scripts that read from or write to graph files will present the graph in
+a human readable form. This form is different from the actual file format.
+
 ```
 BipartiteGraph(VERTEX_COUNT) {
   |A|   = A_COUNT
