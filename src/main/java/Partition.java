@@ -85,6 +85,41 @@ public class Partition {
         assert vertices.equals(hubs);
     }
 
+    public static Partition random(Set<String> hubs, int clusters, Random rng) {
+        if (clusters > hubs.size()) {
+            throw new IllegalArgumentException();
+        }
+
+        /* Initialize the groups */
+        final List<Set<String>> groups = new ArrayList<>();
+        for (int i = 0; i < clusters; i++) {
+            groups.add(new HashSet<String>());
+        }
+
+        /* The pool of vertices */
+        final LinkedList<String> all = new LinkedList<>(hubs);
+        Collections.shuffle(all, rng);
+
+        /* Add one element to each group */
+        for (Set<String> cluster : groups) {
+            cluster.add(all.poll());
+        }
+
+        /* Randomly add the rest of the elements */
+        for (String s : all) {
+            groups.get(rng.nextInt(clusters)).add(s);
+        }
+
+        /* Create the Partition */
+        final Partition r = new Partition("random");
+        r.vertices.addAll(hubs);
+        for (Set<String> group : groups) {
+            r.clusters.add(Collections.unmodifiableSet(group));
+        }
+
+        return r;
+    }
+
     /**
      * Checks if two {@code Partition} objects refer to partitions of the same hub set.
      *

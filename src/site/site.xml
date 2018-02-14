@@ -64,6 +64,7 @@
             <item name="Verify Graph" href="verify-graph.html"/>
             <item name="Verify Partition" href="verify-partition.html"/>
             <item name="Evaluate" href="evaluate.html"/>
+            <item name="Evaluate Random" href="evaluate-random.html"/>
         </menu>
     </body>
 

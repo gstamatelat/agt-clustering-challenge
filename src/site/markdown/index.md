@@ -36,3 +36,4 @@ package to help you develop and test your solution.
 	- [Verify Graph](verify-graph.html)
 	- [Verify Partition](verify-partition.html)
 	- [Evaluate](evaluate.html)
+	- [Evaluate Random](evaluate-random.html)
